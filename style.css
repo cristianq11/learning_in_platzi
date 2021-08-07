@@ -1,0 +1,33 @@
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.cover {
+    height: 400px;
+    background-image: url(martillo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0,0,0,0.5);
+    background-blend-mode: darken;
+    color: wheat;
+}
+.cover-small {
+    height: 200px;
+    background-blend-mode: normal;
+
+}
+
+.card {
+    border: 0 important;
+    box-shadow: 0 4px 6px rgba(0,0,0,1), 0 2px 4px -1px rgba(0,0,0,0.86);
+}
+.card-title {
+    min-height: 3rem;
+    font-family: 'Fjalla One', sans-serif;
+    
+}
+.card-text{
+    min-height: 13rem;
+}
