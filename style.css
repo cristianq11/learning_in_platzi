@@ -35,14 +35,14 @@ h1,h2,h3,h4,h5,h6 {
     min-height: 13rem;
 
 }
-.product-stripe {
+.product-stripe , .slider{
     overflow-x: scroll;
     padding-top: 1rem;
     padding-bottom: 1rem;
 
 }
 
-.stripe-container {
+.stripe-container , .slider-container{
     display: flex;
 }
 .stripe-container .card {
@@ -66,4 +66,53 @@ h1,h2,h3,h4,h5,h6 {
 img {
     padding: 10px;
     border:10px;
+} 
+.slider{
+    overflow-x: hidden;
+
+}
+.slider-container{
+    transform: translateX(0);
+    animation: slider 8s infinite;
+}
+
+.image-container{
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position:center;
+    flex-shrink: 0;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    45%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(-200%);
+
+    }
+    75%{
+        transform: translateX(-300%);
+
+    }
+    95%{
+        transform: translateX(-300%);
+
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
